@@ -158,6 +158,14 @@ public class Main2Activity extends AppCompatActivity {
             }
         });
 
+        op2.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                tvResult.setText("두번재 숫자 입력 완료");
+                return false;
+            }
+        });
+
 
 
 

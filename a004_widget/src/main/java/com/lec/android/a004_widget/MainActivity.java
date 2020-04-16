@@ -60,6 +60,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
         // 값의 변화 (입력 완료)
         etEmail.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
