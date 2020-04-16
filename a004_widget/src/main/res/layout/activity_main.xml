@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity" >
 
     <TextView
         android:id="@+id/tvTitle"
@@ -27,8 +27,6 @@
                 android:layout_height="match_parent">
 
                 <TextView
-
-
                     android:id="@+id/tvName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -37,7 +35,6 @@
 
                 <EditText
                     android:id="@+id/etName"
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="15"
@@ -51,7 +48,6 @@
 
                 <TextView
                     android:id="@+id/tvPassword"
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="비밀번호"
@@ -63,7 +59,7 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPassword"
-                     />
+                    />
             </TableRow>
 
             <TableRow
@@ -82,9 +78,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="이메일 입력"
                     android:inputType="textEmailAddress"
-                     />
+                    android:hint="이메일 입력"/>
             </TableRow>
 
             <TableRow
@@ -103,10 +98,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
-
-                    android:inputType="number"/>
-
-
+                    android:inputType="number"
+                    />
             </TableRow>
 
             <TableRow
@@ -114,16 +107,12 @@
                 android:layout_height="match_parent">
 
                 <TextView
-
                     android:id="@+id/tvResult"
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="TextView"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:layout_span="2"/>
-
-
+                    android:layout_span="2"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
             </TableRow>
 
@@ -132,14 +121,12 @@
                 android:layout_height="match_parent">
 
                 <TextView
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="TextView"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
                 <EditText
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -152,14 +139,12 @@
                 android:layout_height="match_parent">
 
                 <TextView
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="TextView"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
                 <EditText
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -172,14 +157,12 @@
                 android:layout_height="match_parent">
 
                 <TextView
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="TextView"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
                 <EditText
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -192,14 +175,12 @@
                 android:layout_height="match_parent">
 
                 <TextView
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="TextView"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
                 <EditText
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -212,14 +193,12 @@
                 android:layout_height="match_parent">
 
                 <TextView
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="TextView"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
                 <EditText
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -232,14 +211,12 @@
                 android:layout_height="match_parent">
 
                 <TextView
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="TextView"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
                 <EditText
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -252,14 +229,12 @@
                 android:layout_height="match_parent">
 
                 <TextView
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="TextView"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
                 <EditText
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -272,14 +247,12 @@
                 android:layout_height="match_parent">
 
                 <TextView
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="TextView"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
                 <EditText
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -292,14 +265,84 @@
                 android:layout_height="match_parent">
 
                 <TextView
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="TextView"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
                 <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name" />
+            </TableRow>
 
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"

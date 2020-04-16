@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -10,7 +11,7 @@
         android:layout_height="wrap_content"
         android:background="#00FF00"
         android:text="첫번째 TextView"
-        android:textColor="#9AA8F1"
+        android:textColor="#0D47A1"
         android:textSize="30sp" />
 
     <TextView
@@ -19,11 +20,12 @@
         android:layout_height="wrap_content"
         android:text="TextView" />
 
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="버튼A"
-        android:layout_margin="30dp"
+        android:text="버튼 A"
+        android:layout_margin="10dp"
         />
 
 
@@ -32,7 +34,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:textColor="#FF9800"
-        android:padding="40dp"
-        android:background="@color/colorPrimaryDark"/>
+        android:textColor="#BF360C"
+        android:padding="10dp"
+        android:background="@color/colorAccent"/>
 </LinearLayout>
+
+

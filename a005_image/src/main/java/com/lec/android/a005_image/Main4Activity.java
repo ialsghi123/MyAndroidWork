@@ -13,7 +13,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
-
 /**
  *  인터넷 상의 이미지 보여주기
  *      1. 권한을 획득한다 (인터넷에 접근할수 있는 권한을 획득한다)  - 메니페스트 파일
@@ -23,66 +22,51 @@ import java.net.URL;
  *
  *
  */
-
-
-
-
 public class Main4Activity extends AppCompatActivity {
 
-    //이미지 URL,반드시 https://이어야 한다.
-
+    // 이미지 URL, 반드시 https:// 이어야 한다.
     String imgUrl = "https://developer.android.com/studio/images/studio-icon-stable.png";
 
     ImageView iv1;
     TextView tvUrl;
 
-    Handler handler = new Handler(); // 외부쓰레드에서 메인 UI화면에 그릴때 사용
-
-
-
-
+    Handler handler = new Handler();   // 외부 쓰레드에서 메인 UI 화면에 그릴때 사용
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
 
-        iv1 =findViewById(R.id.iv1);
-        tvUrl=findViewById(R.id.tvUrl);
+        iv1 = findViewById(R.id.iv1);
+        tvUrl = findViewById(R.id.tvUrl);
 
-        //Thread t = new Thread(Runnable);
-
+        // Thread t = new Thread(Runnable);
         Thread t = new Thread(new Runnable() {
             @Override
             public void run() {
-
-                //Bitmap <- InputStream <- URL<-"url"
+                // Bitmap <- InputStream <- URL <- "url"
                 try {
-                    //Thread 없이 수행하면
-                    //android.os.NetworkOnMainThraException 발생
+                    // Thread 없이 수행하면
+                    // android.os.NetworkOnMainThreadException 발생
                     URL url = new URL(imgUrl);
                     InputStream in = url.openStream();
-                    final Bitmap bm =BitmapFactory.decodeStream(in);
+                    final Bitmap bm = BitmapFactory.decodeStream(in);
 
-
-
-//                    iv1.setImageBitmap(bm);
-                    //Handler 없이 사용하면
+                    // iv1.setImageBitmap(bm);
+                    // Handler 없이 사용하면
+                    // CalledFromWrongThreadException: Only the original thread that created a view hierarchy can touch its views.
 
                     handler.post(new Runnable() {
                         @Override
                         public void run() {
-
                             // 외부쓰레드에서 메인UI 에 접근할때는
                             // 반드시 Handler 객체 사용.
-                            // ※ Handler를 사용하지 않으면 어떻게 되는지 보자
                             iv1.setImageBitmap(bm);
                             tvUrl.setText(imgUrl);
                         }
                     });
 
-
-                } catch (IOException e) {
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
@@ -90,18 +74,7 @@ public class Main4Activity extends AppCompatActivity {
         t.start();
 
 
-        //Bitmap <- InputStream <- URL<-"url"
-        try {
-            URL url = new URL(imgUrl);
-            InputStream in = url.openStream();
-            Bitmap bm =BitmapFactory.decodeStream(in);
 
 
-            //android.os.NetworkOnMainThraException 발생
-            iv1.setImageBitmap(bm);
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-}
+    } // end onCreate()
+} // end Activity

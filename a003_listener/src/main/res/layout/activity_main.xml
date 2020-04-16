@@ -48,7 +48,6 @@
         android:layout_height="wrap_content"
         android:stretchColumns="*">
 
-
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
@@ -73,8 +72,8 @@
                 android:id="@+id/btnC"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="C"
                 android:layout_column="2"
+                android:text="C"
                 android:tag="Cookie"/>
         </TableRow>
 
@@ -94,16 +93,16 @@
                 android:id="@+id/btnE"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="E"
                 android:layout_column="1"
+                android:text="E"
                 android:tag="Eclair"/>
 
             <Button
                 android:id="@+id/btnF"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="F"
                 android:layout_column="2"
+                android:text="F"
                 android:tag="Froyo"/>
         </TableRow>
 
@@ -118,7 +117,6 @@
                 android:layout_span="3"
                 android:ems="10"
                 />
-
         </TableRow>
 
         <TableRow
@@ -132,12 +130,9 @@
                 android:layout_span="2"
                 android:layout_column="1"
                 android:text="Clear"
-
                 />
 
-
         </TableRow>
-
 
     </TableLayout>
 
@@ -150,9 +145,9 @@
             android:id="@+id/btnInc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="+"
             android:layout_weight="1"
-            android:text="+" />
-
+            />
         <Button
             android:id="@+id/btnDec"
             android:layout_width="wrap_content"
@@ -160,9 +155,8 @@
             android:text="-"
             android:layout_weight="1"
             />
+
+
     </LinearLayout>
-
-
-
 
 </LinearLayout>

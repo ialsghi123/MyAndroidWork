@@ -54,20 +54,20 @@ public class MainActivity extends AppCompatActivity {
                     value = -add;
                 }
                 pb2.setProgress(value);   // 프로그레스바의 진행값 설정
-                            }
-            });
+            }
+        });
 
 
-            // 앱 시작시 Thread를 사용하여 ProgressBar 증가시키기
-            Thread t = new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    while(true){
+        // 앱 시작시 Thread를 사용하여 ProgressBar 증가시키기
+        Thread t = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while(true){
 
-                                value2 = value2 + add2;
+                    value2 = value2 + add2;
 
-                                if(value2 > 100 || value2 < 0){
-                                    add2 = -add2;
+                    if(value2 > 100 || value2 < 0){
+                        add2 = -add2;
                     }
 
                     // 별도의 작업 Thread 에서
@@ -94,4 +94,5 @@ public class MainActivity extends AppCompatActivity {
 
 
 } // end Activity
+
 

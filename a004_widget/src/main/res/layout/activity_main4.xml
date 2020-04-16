@@ -26,21 +26,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="포도"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <CheckBox
         android:id="@+id/cb3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="키위"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <CheckBox
         android:id="@+id/cb4"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="바나나"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <Button
         android:id="@+id/btnComplete"
@@ -57,3 +57,5 @@
 
 
 </LinearLayout>
+
+

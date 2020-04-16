@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".Main2Activity">
+    tools:context=".Main2Activity"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/tvTitle"
@@ -33,13 +33,13 @@
                 android:id="@+id/iv2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@android:drawable/ic_lock_lock" />
+                app:srcCompat="@android:drawable/btn_star_big_on" />
 
             <ImageView
                 android:id="@+id/iv3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@android:drawable/btn_star_big_on" />
+                app:srcCompat="@android:drawable/ic_menu_camera" />
 
         </LinearLayout>
 
@@ -47,4 +47,8 @@
 
     </ScrollView>
 
+
 </LinearLayout>
+
+
+
