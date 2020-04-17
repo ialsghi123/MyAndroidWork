@@ -18,7 +18,7 @@ public class Main5Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main4);
+        setContentView(R.layout.activity_main5);
 
         // 체크박스와는 달리
         // RadioButton 은 각각 선언하는 것이 아니라 RadioGroup 으로 선언하여 사용
