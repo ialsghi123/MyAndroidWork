@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Dialog 클래스로 다이얼로그 객체 생성및 세팅
         dlg1 = new Dialog(this);   // 다이얼로그 객체 생성
-//        dlg1.setContentView(R.layout.dialog_layout11);   // 다이얼로그 화면 등록
+        dlg1.setContentView(R.layout.dialog_layout11);   // 다이얼로그 화면 등록
 
         // Dialog 안의 View 객체들 얻어오기
         ivDlgBanner = dlg1.findViewById(R.id.ivDlgBanner);
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
         // #2
         dlg2 = new Dialog(this);
-//        dlg2.setContentView(R.layout.dialog_layout12);
+        dlg2.setContentView(R.layout.dialog_layout12);
         dlg2.setOwnerActivity(MainActivity.this);
         dlg2.setCanceledOnTouchOutside(false);
 

@@ -5,7 +5,7 @@
     android:orientation="vertical" >
     <!-- 대화상자 레이아웃의 경우
     layout_width 를 match_parent 로 하면
-    너무 좁게 나온다. (함 보자) 적절한 크기로 지정해주는것이 좋다 -->
+    너무 좁게 나온다. (함 보자) 적절한 크기로    지정해주는것이 좋다 -->
 
     <ImageView
         android:id="@+id/ivDlgBanner"
