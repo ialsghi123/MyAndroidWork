@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         Thread.currentThread().stop(); //java.lang.UnsupportedOperationException
     }//end mOnClick
 
-    //1.Thread를 상속받은 작어브레드
+    //1.Thread를 상속받은 작업스레드
     class BackThread extends Thread {
         @Override
         public void run() {
