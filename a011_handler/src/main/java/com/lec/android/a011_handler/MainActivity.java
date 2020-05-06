@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-}//end mOnClick
+    }//end mOnClick
 
     //안드로이드는 메인 쓰레드를 강제 종료시킬 수 없다.
     public void mOnClick2(View v){
