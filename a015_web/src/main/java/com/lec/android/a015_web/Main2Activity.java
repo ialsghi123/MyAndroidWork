@@ -31,11 +31,11 @@ public class Main2Activity extends AppCompatActivity {
 
         etUrl = findViewById(R.id.etUrl);
         wv = findViewById(R.id.wv);
-                btnWebView = findViewById(R.id.btnWebView);
-                btnBrowser = findViewById(R.id.btnBrowser);
+        btnWebView = findViewById(R.id.btnWebView);
+        btnBrowser = findViewById(R.id.btnBrowser);
 
-                //WebView 세팅
-                wv.getSettings().setJavaScriptEnabled(true); //JavaScript 사용여부:디폴트 false
+        //WebView 세팅
+        wv.getSettings().setJavaScriptEnabled(true); //JavaScript 사용여부:디폴트 false
 
                 btnWebView.setOnClickListener(new View.OnClickListener() {
                     @Override
