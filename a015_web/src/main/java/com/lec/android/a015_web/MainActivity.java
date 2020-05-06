@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText etUrl;
     TextView tvResult;
-    Button btnRequest, btnClear;
+    Button btnRequest, btnClear;//수정
 
     Handler handler = new Handler();
 
